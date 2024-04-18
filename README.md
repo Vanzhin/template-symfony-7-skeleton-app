@@ -48,7 +48,7 @@
 ## 4. Установка
 1. Склонировать репозиторий в текущую директорию
     ```shell
-    git clone 
+    git clone git@github.com:Vanzhin/Template-Symfony-7-skeleton-app.git
     ```
 2. Перейти в директорию с файлом docker-compose.yaml
     ```shell
