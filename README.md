@@ -5,7 +5,7 @@
 
 ## 1. Термины
 
-- Symfony — фреймворк основного контейнера. Можно почитать [здесь](https://symfony.com/doc/current/index.html)
+- Symfony — фреймворк основного контейнера (php-fpm). Можно почитать [здесь](https://symfony.com/doc/current/index.html)
 
 
 ## 2. Используемые технологии
@@ -50,11 +50,14 @@
     ```shell
     git clone git@github.com:Vanzhin/Template-Symfony-7-skeleton-app.git
     ```
-2. Перейти в директорию с файлом docker-compose.yaml
+2. Создать файлы .env путем их копирования из .env.example в директориях docker и app
     ```shell
     cd ./docker
     ```
-
+3. Перейти в директорию с файлом docker-compose.yaml
+    ```shell
+    cd ./docker
+    ```
 ## 5. Запуск 
    ```shell
    docker compose up -d
