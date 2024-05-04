@@ -42,6 +42,8 @@ services:
       - ./../app:/app:rw
       - ./supervisor/conf.d:/etc/supervisor/conf.d
       - ./supervisor/log:/var/log/supervisor
+    networks:
+      - default
 
   manager_php-cli:
     domainname: ${DOMAIN}
@@ -58,6 +60,8 @@ services:
         condition: service_healthy
     volumes:
       - ./../app:/app:rw
+    networks:
+      - default
 
   manager_nginx:
     domainname: ${DOMAIN}
