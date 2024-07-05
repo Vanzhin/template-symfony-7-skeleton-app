@@ -26,6 +26,7 @@ services:
     working_dir: /app
 
   manager_supervisor:
+    #todo поправить как у монитора 9896c40d878c31a0688e9542ae5d2ec083b04018
     domainname: ${DOMAIN}
     hostname: ${DOMAIN}
     working_dir: /app
